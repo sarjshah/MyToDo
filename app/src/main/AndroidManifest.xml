@@ -3,6 +3,7 @@
     package="com.practice.myapplication" >
 
     <application
+        android:name=".di.MyToDoApplication"
         android:allowBackup="true"
         android:fullBackupOnly="true"
         android:icon="@mipmap/ic_launcher"
