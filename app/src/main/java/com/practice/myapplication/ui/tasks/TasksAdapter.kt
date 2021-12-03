@@ -11,8 +11,6 @@ import com.practice.myapplication.databinding.ItemTaskBinding
 
 class TasksAdapter : ListAdapter<Task, TasksAdapter.TasksViewHolder>(DiffCallback()) {
 
-    var taskList: List<Task> = emptyList()
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TasksViewHolder =
         TasksViewHolder(
             ItemTaskBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -25,12 +23,12 @@ class TasksAdapter : ListAdapter<Task, TasksAdapter.TasksViewHolder>(DiffCallbac
     class TasksViewHolder(private val binding: ItemTaskBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: Task) {
+        fun bind(task: Task) {
             binding.apply {
-                tvTaskName.text = item.name
-                tvTaskName.paint.isStrikeThruText = item.isCompleted
-                cbCompleted.isChecked = item.isCompleted
-                ivPriority.isVisible = item.isImportant
+                tvTaskName.text = task.name
+                tvTaskName.paint.isStrikeThruText = task.isCompleted
+                cbCompleted.isChecked = task.isCompleted
+                ivPriority.isVisible = task.isImportant
             }
         }
     }
