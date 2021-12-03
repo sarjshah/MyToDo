@@ -14,7 +14,7 @@
 
     <TextView
         android:id="@+id/tvTaskName"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:maxLines="1"
@@ -33,6 +33,7 @@
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:src="@drawable/ic_priority"
-        android:contentDescription="@null"/>
+        android:contentDescription="@null"
+        tools:visibility="invisible"/>
 
 </RelativeLayout>
