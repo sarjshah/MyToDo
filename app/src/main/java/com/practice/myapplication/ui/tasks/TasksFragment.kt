@@ -11,6 +11,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class TasksFragment : Fragment(R.layout.fragment_tasks) {
+    private val viewModel by viewModels<TasksViewModel>()
     private lateinit var binding: FragmentTasksBinding
     private lateinit var tasksAdapter: TasksAdapter
 
@@ -27,6 +28,10 @@ class TasksFragment : Fragment(R.layout.fragment_tasks) {
                 layoutManager = LinearLayoutManager(requireContext())
                 setHasFixedSize(true)
             }
+        }
+
+        viewModel.tasks.observe(viewLifecycleOwner) { taskList ->
+            tasksAdapter.submitList(taskList)
         }
     }
 }
