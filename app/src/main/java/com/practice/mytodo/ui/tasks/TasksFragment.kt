@@ -1,4 +1,4 @@
-package com.practice.myapplication.ui.tasks
+package com.practice.mytodo.ui.tasks
 
 import android.os.Bundle
 import android.view.Menu
@@ -9,9 +9,9 @@ import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.practice.myapplication.R
-import com.practice.myapplication.databinding.FragmentTasksBinding
-import com.practice.myapplication.utils.onQueryTextChanged
+import com.practice.mytodo.R
+import com.practice.mytodo.databinding.FragmentTasksBinding
+import com.practice.mytodo.utils.onQueryTextChanged
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 

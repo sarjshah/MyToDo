@@ -1,4 +1,4 @@
-package com.practice.myapplication
+package com.practice.mytodo
 
 import org.junit.Test
 

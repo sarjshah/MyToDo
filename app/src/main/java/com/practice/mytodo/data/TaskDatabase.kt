@@ -1,9 +1,9 @@
-package com.practice.myapplication.data
+package com.practice.mytodo.data
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.practice.myapplication.di.ApplicationScope
+import com.practice.mytodo.di.ApplicationScope
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import javax.inject.Inject

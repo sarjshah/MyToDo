@@ -1,4 +1,4 @@
-package com.practice.myapplication.utils
+package com.practice.mytodo.utils
 
 import androidx.appcompat.widget.SearchView
 

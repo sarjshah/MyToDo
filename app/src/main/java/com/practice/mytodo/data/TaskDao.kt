@@ -1,7 +1,7 @@
-package com.practice.myapplication.data
+package com.practice.mytodo.data
 
 import androidx.room.*
-import com.practice.myapplication.ui.tasks.SortOrder
+import com.practice.mytodo.ui.tasks.SortOrder
 import kotlinx.coroutines.flow.Flow
 
 @Dao

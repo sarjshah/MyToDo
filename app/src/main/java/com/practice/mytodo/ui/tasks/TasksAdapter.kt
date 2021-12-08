@@ -1,4 +1,4 @@
-package com.practice.myapplication.ui.tasks
+package com.practice.mytodo.ui.tasks
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,8 +6,8 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.practice.myapplication.data.Task
-import com.practice.myapplication.databinding.ItemTaskBinding
+import com.practice.mytodo.data.Task
+import com.practice.mytodo.databinding.ItemTaskBinding
 
 class TasksAdapter : ListAdapter<Task, TasksAdapter.TasksViewHolder>(DiffCallback()) {
 

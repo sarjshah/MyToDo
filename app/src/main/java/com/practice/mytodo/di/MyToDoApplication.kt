@@ -1,4 +1,4 @@
-package com.practice.myapplication.di
+package com.practice.mytodo.di
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

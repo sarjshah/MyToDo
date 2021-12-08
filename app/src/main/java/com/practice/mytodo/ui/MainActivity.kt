@@ -1,8 +1,8 @@
-package com.practice.myapplication.ui
+package com.practice.mytodo.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.practice.myapplication.R
+import com.practice.mytodo.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

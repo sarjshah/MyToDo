@@ -1,9 +1,9 @@
-package com.practice.myapplication.di
+package com.practice.mytodo.di
 
 import android.app.Application
 import androidx.room.Room
-import com.practice.myapplication.data.TaskDao
-import com.practice.myapplication.data.TaskDatabase
+import com.practice.mytodo.data.TaskDao
+import com.practice.mytodo.data.TaskDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
